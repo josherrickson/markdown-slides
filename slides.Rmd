@@ -35,13 +35,14 @@ You can "knit" a document which will execute code chunks and then convert the wh
 ## R notebooks
 
 - Concept from Python (jupyter notebooks)
-- Just a RMarkdown file where you execute chunks one-at-a-time instead of knitting the whole document.
+- Just a RMarkdown file where you execute chunks interactively instead of knitting the whole document.
 
 ## dyndoc
 
 - Produces html, word or plaintext (no pdf, by default).
 - Early days - only introduced in Stata 15.
-- No "flavors" yet 
+- No "flavors" yet.
+    - Stata dyndoc to Rmarkdown?
 
 ## Benefits of Markdown Documents
 
