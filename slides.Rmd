@@ -1,0 +1,16 @@
+---
+title: "Markdown"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Markdown
+
+## Flavors of (Statistical) Markdown
+
+## Benefits of Markdown Documents
+
+## Software support
