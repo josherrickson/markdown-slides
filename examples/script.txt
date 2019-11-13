@@ -1,0 +1,12 @@
+Example 1
+====================
+- Discuss
+  - Header
+  - Text, markdown
+  - lists, tables
+- Discuss R code chunk
+- Knit
+- Show pdf, word
+- Change header - add author
+- Show that code is persistent (add mean(z) in new chunk)
+- As notebook, demostrate chunks inline

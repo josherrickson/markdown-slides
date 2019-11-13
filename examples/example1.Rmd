@@ -1,0 +1,24 @@
+---
+title: "Example 1"
+output: html_document
+---
+
+Text can be simply entered. Markdown enables simple text styling, such as **bold**, *italic*, `code`, or [links](https://ihpi.umich.edu/member-resources/data-and-methods).
+
+We can also include:
+
+- lists
+- tables
+
+| X | Y |
+|---|---|
+| a | 1 |
+| b | 2 |
+
+Code chunks can be included easily:
+
+```{r}
+x <- 100
+z <- rnorm(x)
+hist(z)
+```
