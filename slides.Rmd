@@ -1,16 +1,57 @@
 ---
 title: "Markdown"
+author: "Josh Errickson"
+organization: "CSCAR"
 output: ioslides_presentation
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
+library(DiagrammeR)
 ```
 
 ## Markdown
 
-## Flavors of (Statistical) Markdown
+Markdown is a syntax (a markup language) that conveys how text should be displayed.
+
+- Originally created for blogs (text to HTML)
+- Expanded to be translatable from markdown to almost anything (via pandoc)
+
+Markdown with statistical software (R or Stata) allows you to mix markdown text with code "chunks".
+
+- R calls it RMarkdown
+- Stata calls in dyndoc
+
+You can "knit" a document which will execute code chunks and then convert the whole document into desired output.
+
+## RMarkdown
+
+- Produces html, word or pdf.
+- Many "flavors"
+    - slides, bookdown, blogdown, ctex, flexdashboard, ...
+- Can include code chunks of other languages (including SAS!)
+- Well support by RStudio, but not required
+
+## R notebooks
+
+- Concept from Python (jupyter notebooks)
+- Just a RMarkdown file where you execute chunks one-at-a-time instead of knitting the whole document.
+
+## dyndoc
+
+- Produces html, word or plaintext (no pdf, by default).
+- Early days - only introduced in Stata 15.
+- No "flavors" yet 
 
 ## Benefits of Markdown Documents
 
-## Software support
+1) Organization
+    - Document must flow from start to end.
+    - Sections/chapters
+2) Reproducibility
+    - Typically more documented than just code, easier to share
+    - Final product is (usually) read-able by non-statisticians
+3) Reports
+    - Great looking output
+    - Automate report generation
+    - Can even write manuscripts or books in it

@@ -28,6 +28,14 @@
 
       // Author information
       presenters: [
+            {
+        name:  'Josh Errickson' ,
+        company: '',
+        gplus: '',
+        twitter: '',
+        www: '',
+        github: ''
+      },
             ]
     };
   </script>
@@ -3112,11 +3120,73 @@ slide:not(.current) .plotly.html-widget{
 
 <slide class=""><hgroup><h2>Markdown</h2></hgroup><article  id="markdown">
 
-</article></slide><slide class=""><hgroup><h2>Flavors of (Statistical) Markdown</h2></hgroup><article  id="flavors-of-statistical-markdown">
+<p>Markdown is a syntax (a markup language) that conveys how text should be displayed.</p>
+
+<ul>
+<li>Originally created for blogs (text to HTML)</li>
+<li>Expanded to be translatable from markdown to almost anything (via pandoc)</li>
+</ul>
+
+<p>Markdown with statistical software (R or Stata) allows you to mix markdown text with code &ldquo;chunks&rdquo;.</p>
+
+<ul>
+<li>R calls it RMarkdown</li>
+<li>Stata calls in dyndoc</li>
+</ul>
+
+<p>You can &ldquo;knit&rdquo; a document which will execute code chunks and then convert the whole document into desired output.</p>
+
+</article></slide><slide class=""><hgroup><h2>RMarkdown</h2></hgroup><article  id="rmarkdown">
+
+<ul>
+<li>Produces html, word or pdf.</li>
+<li>Many &ldquo;flavors&rdquo;
+
+<ul>
+<li>slides, bookdown, blogdown, ctex, flexdashboard, …</li>
+</ul></li>
+<li>Can include code chunks of other languages (including SAS!)</li>
+<li>Well support by RStudio, but not required</li>
+</ul>
+
+</article></slide><slide class=""><hgroup><h2>R notebooks</h2></hgroup><article  id="r-notebooks">
+
+<ul>
+<li>Concept from Python (jupyter notebooks)</li>
+<li>Just a RMarkdown file where you execute chunks one-at-a-time instead of knitting the whole document.</li>
+</ul>
+
+</article></slide><slide class=""><hgroup><h2>dyndoc</h2></hgroup><article  id="dyndoc">
+
+<ul>
+<li>Produces html, word or plaintext (no pdf, by default).</li>
+<li>Early days - only introduced in Stata 15.</li>
+<li>No &ldquo;flavors&rdquo; yet</li>
+</ul>
 
 </article></slide><slide class=""><hgroup><h2>Benefits of Markdown Documents</h2></hgroup><article  id="benefits-of-markdown-documents">
 
-</article></slide><slide class=""><hgroup><h2>Software support</h2></hgroup><article  id="software-support"></article></slide>
+<ol>
+<li>Organization
+
+<ul>
+<li>Document must flow from start to end.</li>
+<li>Sections/chapters</li>
+</ul></li>
+<li>Reproducibility
+
+<ul>
+<li>Typically more documented than just code, easier to share</li>
+<li>Final product is (usually) read-able by non-statisticians</li>
+</ul></li>
+<li>Reports
+
+<ul>
+<li>Great looking output</li>
+<li>Automate report generation</li>
+<li>Can even write manuscripts or books in it</li>
+</ul></li>
+</ol></article></slide>
 
 
   <slide class="backdrop"></slide>
