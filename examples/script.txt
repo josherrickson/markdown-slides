@@ -7,6 +7,45 @@ Example 1
 - Discuss R code chunk
 - Knit
 - Show pdf, word
+  - Discuss pros/cons
+  - html - pro: fastest to build, doesn't require anything special to share
+         - con: not modifiable
+  - pdf - pro: most precise (html can look different per browser or screen size),
+        - con: slow, not modifiable, requires LaTeX set up on computer
+  - word - pro: modifiable
+         - con: Word
 - Change header - add author
 - Show that code is persistent (add mean(z) in new chunk)
 - As notebook, demostrate chunks inline
+
+
+Example 2
+====================
+Advanced R chunks - echo, eval
+inline R code
+theme?
+
+Example 3,4
+====================
+Embedding Stata, SAS
+
+Example 5-?
+====================
+Examples from my repos
+ - analysis (stats-notes?)
+ - bookdown
+ - slides
+
+Example ?
+====================
+Stata
+Markdown same, stata chunks different
+
+Example ?-?
+====================
+Examples from my repos
+ - stats-notes?
+
+Example ?
+====================
+- Stata workshop - Stata to RMarkdown
