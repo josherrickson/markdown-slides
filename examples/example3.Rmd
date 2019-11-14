@@ -1,0 +1,18 @@
+---
+title: "Example 3"
+output: html_document
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{stata}
+sysuse auto
+regress weight i.foreign
+margins foreign
+```
+
+```{stata}
+summarize
+```
