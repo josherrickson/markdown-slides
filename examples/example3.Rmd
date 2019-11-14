@@ -3,16 +3,50 @@ title: "Example 3"
 output: html_document
 ---
 
-```{r, include = FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+We can run other languages embedded inside R, simply by calling the appropriate "engine".
+
+Here's Python:
+
+```{python}
+import random
+print random.randint(1,100)
+y = 500
 ```
+
+```{python}
+print random.randint(y, y + 10)
+```
+
+Python is a first-class citizen, Python chunks operate just like R chunks.
+
+We can also include Stata.
 
 ```{stata}
 sysuse auto
 regress weight i.foreign
-margins foreign
 ```
+
+Unfortunately, Stata is a second-class citizen here - *each Stata chunk runs independently*.
 
 ```{stata}
 regress weight i.foreign
 ```
+
+SAS can similarly be called, but again is a second-class citizen and each chunk runs independently.
+
+```{sas}
+data weight; 
+   input IDnumber $ Week1 Week16;
+   WeightLoss=Week1-Week16;
+   datalines;
+2477 195  163
+2431 220  198
+2456 173  155
+2412 135  116
+;            
+
+proc print data=weight;
+run; 
+```
+
+There are some workarounds to this (e.g. the "SASmarkdown" package) that I haven't looked into too much. For Stata, I'd rather just write Stata dyndoc commands, then pass the results through RMarkdown.
