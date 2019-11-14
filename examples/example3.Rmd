@@ -14,5 +14,5 @@ margins foreign
 ```
 
 ```{stata}
-summarize
+regress weight i.foreign
 ```
