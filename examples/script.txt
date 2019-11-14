@@ -21,9 +21,18 @@ Example 1
 
 Example 2
 ====================
-Advanced R chunks - echo, eval
-inline R code
-theme?
+- Discuss
+  - options (echo, figure size)
+- Add global options briefly
+- Continue discuss
+  - inline code
+  - Making output look better
+  - Can include equations as well (First is LaTeX style, second is Markdown)
+- Switch to pdf
+- Can produce manuscript-style doc easily
+- Switch to word
+  - Doesn't recognize pure LaTeX, does support markdown
+  - image is fuzzy, add dpi = 300
 
 Example 3,4
 ====================

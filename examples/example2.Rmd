@@ -1,0 +1,60 @@
+---
+title: "Example 2"
+output: word_document
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Code chunks can be passed options:
+
+```{r, echo = FALSE}
+data(iris)
+plot(Petal.Width ~ Petal.Length, data = iris)
+```
+
+```{r, echo = FALSE, fig.width = 5, fig.height = 3}
+plot(Petal.Width ~ Petal.Length, data = iris)
+```
+
+We can also include R code inline. For example, the mean of Petal.Length is `r round(mean(iris$Petal.Length), 2)`. 
+
+There are various auxiliary packages that can produce nice output as well.
+
+```{r}
+head(iris)
+```
+
+```{r}
+library(kableExtra)
+kable(head(iris), format = "markdown", align = c('ccccl'))
+```
+
+```{r}
+m <- lm(Petal.Width ~ ., data = iris)
+summary(m)
+df <- data.frame(summary(m)$coef)
+names(df) <- c("Estimate", "Std. Error", "t", "p-value")
+kable(df,
+      format = "markdown",
+      digits = 2,
+      align = "c") %>% 
+  kable_styling(bootstrap_options = "striped", full_width = F)
+```
+
+The model's \(R^2\) value is `r round(summary(m)$r.squared, 3)`. The model we fit was:
+
+\begin{align*}
+  E(\textrm{Petal.Width} | X) = \beta_0 &+ \beta_1\textrm{Petal.Length} \\
+  &+ \beta_2\textrm{Sepal.Width} \\
+  &+ \beta_3\textrm{Sepal.Length} \\
+  &+ \beta_4I_{\textrm{Species = "versicolor"}} \\
+  &+ \beta_5I_{\textrm{Species = "virginica"}}.
+\end{align*}
+
+The gaussian PDF is
+
+\[
+  f(x | \mu, \sigma^2) = \frac{1}{\sqrt{2\pi\sigma^2}}e^{-\frac{(x - \mu)^2}{2\sigma^2}}.
+\]
