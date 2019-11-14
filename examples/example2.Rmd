@@ -1,11 +1,16 @@
 ---
 title: "Example 2"
-output: word_document
+output: 
+  html_document:
+    toc: true
+    toc_float: true
 ---
 
 ```{r, include = FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
+
+## Options to Code Chunks
 
 Code chunks can be passed options:
 
@@ -18,7 +23,12 @@ plot(Petal.Width ~ Petal.Length, data = iris)
 plot(Petal.Width ~ Petal.Length, data = iris)
 ```
 
+
+### Inline Code
+
 We can also include R code inline. For example, the mean of Petal.Length is `r round(mean(iris$Petal.Length), 2)`. 
+
+## Nice Output 
 
 There are various auxiliary packages that can produce nice output as well.
 
@@ -42,6 +52,8 @@ kable(df,
       align = "c") %>% 
   kable_styling(bootstrap_options = "striped", full_width = F)
 ```
+
+## Equations
 
 The model's \(R^2\) value is `r round(summary(m)$r.squared, 3)`. The model we fit was:
 
