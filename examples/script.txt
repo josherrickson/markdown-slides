@@ -34,18 +34,37 @@ Example 2
   - Doesn't recognize pure LaTeX, does support markdown
   - image is fuzzy, add dpi = 300
 
-Example 3,4
+Example 3
 ====================
 Embedding Stata, SAS
 
-Example 5-?
+Example 4
 ====================
-Examples from my repos
- - analysis (stats-notes?)
- - bookdown
- - slides
+Anna Kratz
+ - Goal is interplay of negative symptoms of MS (pain, fatigue, depression, cognition)
+ - Walk through code - Different sections, inclusion of Stata.
+ - Discussion is more readable to non-R experts than just code, or code and comments.
+   - Can look nicer through use of lists, etc.
+ - Build file, should work!
 
-Example ?
+Example 5
+====================
+Bookdown!
+- Bookdown is a "flavor"
+- Can split into multiple files
+- https://github.com/m-clark/mixed-models-with-R, https://m-clark.github.io/mixed-models-with-R/
+  - All in R
+- https://github.com/josherrickson/stata1, https://errickson.net/stata1/index.html
+  - Dyndoc -> Rmarkdown -> html (https://github.com/josherrickson/dyndoc_via_rmarkdown)
+
+Example 6
+====================
+Slides!
+- https://github.com/josherrickson/matching-slides, https://errickson.net/matching-slides/index.html#/
+- Looks like regular markdown; code and chunks in sections
+- Header specifies that its slides
+
+Example 7
 ====================
 Stata
 Markdown same, stata chunks different
