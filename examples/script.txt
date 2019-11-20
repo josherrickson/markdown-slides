@@ -67,13 +67,25 @@ Slides!
 Example 7
 ====================
 Stata
-Markdown same, stata chunks different
+- Markdown same, stata chunks different
+- Graphs are slightly more complicated.
+- example7.do to dyndoc file, open in html
+- output is very basic, unlike RMarkdown, no "flavors"
+  - Instead, manual configuration. header.txt, css, provided by Stata
 
-Example ?-?
+Example 8
 ====================
-Examples from my repos
- - stats-notes?
+stats-notes
+- Stata Markdown -> Markdown -> Rmarkdown -> output
+- https://errickson.net/stats-notes/randomselection.html
+  - Done by adding some "wrong" tags, so Stata ignores
+  - Show fixRmd.R that cleans up the "wrong" tags
+    - Now markdown file contains only markdown, no chunks
+      - All code is just inside code markdown
 
-Example ?
+
+Example 9
 ====================
-- Stata workshop - Stata to RMarkdown
+margins-notes
+- By including sub-pages which are either Rmarkdown or Dyndoc, can appear that both are working simultaneously
+- Using another flavor; flex dashboard
