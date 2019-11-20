@@ -1,0 +1,27 @@
+<!-- <<dd_include: header.txt >> -->
+
+
+Stata Dyndoc
+===============================================================
+
+Stata's implementation, called "dyndoc", works extremely similar to RMarkdown. We can **include** *markdown* `code`, as well as chunks
+
+~~~~
+<<dd_do>>
+sysuse auto, clear
+describe
+<</dd_do>>
+~~~~
+
+
+Unlike when running Stata directly inside RMarkdown, chunks are not independent.
+
+~~~~
+<<dd_do>>
+scatter mpg weight
+<</dd_do>>
+~~~~
+
+Graphs need to be saved manually after being created in chunks.l
+
+<<dd_graph: sav("graph.svg") replace height(400)>>
