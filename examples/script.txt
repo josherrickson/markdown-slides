@@ -7,6 +7,7 @@ Example 1
 - Discuss R code chunk
 - Knit
 - Show pdf, word
+  - pdf: Looks like latex, some things look slighlty differently e.g. table
   - Discuss pros/cons
   - html - pro: fastest to build, doesn't require anything special to share
          - con: not modifiable
@@ -16,6 +17,7 @@ Example 1
          - con: Word
 - Change header - add author
 - Show that code is persistent (add mean(z) in new chunk)
+  - Forces organization - chunks must be in proper order
 - As notebook, demostrate chunks inline
 
 
@@ -25,18 +27,27 @@ Example 2
   - options (echo, figure size)
 - Add global options briefly
 - Continue discuss
+  - table of contents, sections
   - inline code
   - Making output look better
   - Can include equations as well (First is LaTeX style, second is Markdown)
 - Switch to pdf
 - Can produce manuscript-style doc easily
 - Switch to word
+  - **** Remove toc options ****
+  - **** 2nd table, html to markdown ****
   - Doesn't recognize pure LaTeX, does support markdown
   - image is fuzzy, add dpi = 300
 
 Example 3
 ====================
 Embedding Stata, SAS
+1) ssh greatlakes
+2) cd ~/repos/markdown-notes/examples
+2) module load R stata-se sas
+3) R -> rmarkdown::render("example3.Rmd")
+4) Locally; scp greatlakes:~/repos/markdown-slides/examples/example3.html ~/Desktop/.; open ~/Desktop/example3.html
+
 
 Example 4
 ====================
@@ -46,6 +57,7 @@ Anna Kratz
  - Discussion is more readable to non-R experts than just code, or code and comments.
    - Can look nicer through use of lists, etc.
  - Build file, should work!
+ - R version info at bottom for reproducibility
 
 Example 5
 ====================
@@ -54,13 +66,11 @@ Bookdown!
 - Can split into multiple files
 - https://github.com/m-clark/mixed-models-with-R, https://m-clark.github.io/mixed-models-with-R/
   - All in R
-- https://github.com/josherrickson/stata1, https://errickson.net/stata1/index.html
-  - Dyndoc -> Rmarkdown -> html (https://github.com/josherrickson/dyndoc_via_rmarkdown)
 
 Example 6
 ====================
 Slides!
-- https://github.com/josherrickson/matching-slides, https://errickson.net/matching-slides/index.html#/
+- https://github.com/josherrickson/markdown-slides
 - Looks like regular markdown; code and chunks in sections
 - Header specifies that its slides
 

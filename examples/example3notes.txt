@@ -1,4 +1,0 @@
-1) Connect to greatlakes
-2) module load R; module load stata-se; module load SAS
-3) R -> rmarkdown::render("example3.Rmd")
-4) Locally; scp greatlakes:~/repos/markdown-slides/examples/example3.html .; open example3.html
