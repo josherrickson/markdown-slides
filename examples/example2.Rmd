@@ -47,7 +47,7 @@ summary(m)
 df <- data.frame(summary(m)$coef)
 names(df) <- c("Estimate", "Std. Error", "t", "p-value")
 kable(df,
-      format = "markdown",
+      format = "html",
       digits = 2,
       align = "c") %>% 
   kable_styling(bootstrap_options = "striped", full_width = F)
