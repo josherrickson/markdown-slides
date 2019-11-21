@@ -7,11 +7,11 @@ Example 1
 - Discuss R code chunk
 - Knit
 - Show pdf, word
-  - pdf: Looks like latex, some things look slighlty differently e.g. table
+  - pdf: Looks like latex, some things look slightly different (table)
   - Discuss pros/cons
-  - html - pro: fastest to build, doesn't require anything special to share
+  - html - pro: fastest to build, doesn't require anything to share
          - con: not modifiable
-  - pdf - pro: most precise (html can look different per browser or screen size),
+  - pdf - pro: most precise (html can look different per screen),
         - con: slow, not modifiable, requires LaTeX set up on computer
   - word - pro: modifiable
          - con: Word
