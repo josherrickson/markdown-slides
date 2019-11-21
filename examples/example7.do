@@ -1,2 +1,2 @@
-cd ~/repositories/workshops/markdown-slides/examples
+cd ~/repositories/markdown-slides/examples
 dyndoc example7.txt, replace
